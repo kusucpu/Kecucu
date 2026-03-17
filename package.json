@@ -1,0 +1,10 @@
+{
+  "name": "chat-minim-sensor",
+  "version": "1.0.0",
+  "description": "Web chat dengan OpenRouter API via Netlify",
+  "main": "api/chat.js",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
