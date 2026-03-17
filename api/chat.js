@@ -24,8 +24,8 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        'HTTP-Referer': process.env.SITE_URL || 'https://chat-minim-sensor.vercel.app',
-        'X-Title': process.env.SITE_NAME || 'Chat Minim Sensor',
+        'HTTP-Referer': process.env.SITE_URL || 'https://kucup.netlify.app/',
+        'X-Title': process.env.SITE_NAME || 'Kucup chat',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
