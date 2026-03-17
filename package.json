@@ -1,7 +1,7 @@
 {
-  "name": "chat-minim-sensor",
+  "name": "kucup",
   "version": "1.0.0",
-  "description": "Web chat dengan OpenRouter API via Netlify",
+  "description": "Enjoy!",
   "main": "api/chat.js",
   "type": "module",
   "dependencies": {
