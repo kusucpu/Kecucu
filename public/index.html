@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Minim Sensor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Chat Minim Sensor</h1>
+    <p class="subtitle">Menggunakan OpenRouter API via Vercel</p>
+    
+    <div class="chat-container" id="chatContainer">
+      <div class="message bot-message">
+        <div class="avatar">🤖</div>
+        <div class="message-content">Halo! Ada yang bisa saya bantu?</div>
+      </div>
+    </div>
+    
+    <div class="input-container">
+      <select id="modelSelect" class="model-select">
+        <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo</option>
+        <option value="openai/gpt-4">GPT-4</option>
+        <option value="anthropic/claude-2">Claude 2</option>
+        <option value="google/gemini-pro">Gemini Pro</option>
+        <option value="meta-llama/llama-2-70b-chat">Llama 2 70B</option>
+        <option value="mistralai/mistral-7b-instruct">Mistral 7B</option>
+      </select>
+      <textarea 
+        id="messageInput" 
+        placeholder="Ketik pesan Anda..." 
+        rows="2"
+      ></textarea>
+      <button id="sendButton" class="send-button">
+        <span>Kirim</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
