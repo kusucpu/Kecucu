@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, model = 'openai/gpt-3.5-turbo' } = req.body;
+    const { message, model = 'qwen/qwen-2.5-7b-instruct:free' } = req.body;
 
     if (!message) {
       return res.status(400).json({ error: 'Message is required' });
