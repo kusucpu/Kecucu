@@ -18,7 +18,7 @@ export default async (request, context) => {
 
   try {
     const body = await request.json();
-    const { message, model = 'qwen/qwen-2.5-7b-instruct:free' } = body;
+    const { message, model = 'cognitivecomputations/dolphin-mistral-24b-venice-edition:free' } = body;
 
     if (!message) {
       return new Response(JSON.stringify({ error: 'Message is required' }), {
